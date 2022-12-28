@@ -11,6 +11,7 @@ body {
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.font};
     accent: ${({ theme }) => theme.accent};
+    margin: 20px;
 }
 `;
 
