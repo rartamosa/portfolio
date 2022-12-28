@@ -3,7 +3,8 @@ import { ThemeProvider } from "styled-components";
 
 import { darkTheme, lightTheme } from "./theme";
 import GlobalStyles from "./global";
-import Toggle from "./components/Toggle";
+
+import ScreenLayout from "./components/ScreenLayout";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -20,9 +21,10 @@ const App = () => {
     <>
       <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
         <GlobalStyles />
-        <h2>Test</h2>
-        <div>Hello World</div>
-        <Toggle onThemeToggle={handleThemeToggle} />
+        <ScreenLayout
+          onThemeToggle={handleThemeToggle}
+          theme={theme}
+        ></ScreenLayout>
       </ThemeProvider>
     </>
   );
