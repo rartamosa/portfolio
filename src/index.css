@@ -58,19 +58,45 @@ code {
 
 /* _____________________________________________________________________________ */
 /* PROJECTS */
+/* .projects__yellow-cirlce {
+  background-image: url(../public/assets/yellow-circle.png);
+  width: 395px;
+  height: 395px;
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  right: -75%;
+}
+
+.projects__orange-circle {
+  background-image: url(../public/assets/orange-circle.png);
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  background-size: contain;
+  position: absolute;
+  left: -46%;
+} */
+
 .singleMobileProject_img {
   height: 368px;
   margin-bottom: 20px;
 }
 
-.singleMobileProject_container {
+.single-project__laptop-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.single-project__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 70px;
+  position: relative;
 }
 
-.singleMobileProject_details {
+.single-project__details {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -79,11 +105,11 @@ code {
   padding: 14px;
 }
 
-.singleMobileProject_details-light {
+.single-project__details-light {
   border: 1px solid #211d16;
 }
 
-.singleMobileProject_description-title {
+.single-project__description-title {
   font-weight: 500;
   font-size: 25px;
   line-height: 31px;
@@ -92,32 +118,33 @@ code {
   margin-bottom: 20px;
 }
 
-.singleMobileProject_description-list {
+.single-project__description-list {
   margin-bottom: 10px;
 }
 
-.singleMobileProject_description-list li {
+.single-project__description-list li {
   list-style: none;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
   text-align: right;
+  text-transform: capitalize;
 }
 
-.singleMobileProject_icon-container {
+.single-project__icon-container {
   display: flex;
   gap: 17px;
   justify-content: center;
 }
 
-.singleMobileProject_icon-container_single-icon {
+.single-project__icon-container_single-icon {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
 
-.singleMobileProject_icon-container_single-icon a {
+.single-project__icon-container_single-icon a {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
@@ -125,6 +152,11 @@ code {
   text-decoration: none;
   color: inherit;
 }
+
+.single-project__icon-container_line {
+  border: 1px solid #fdeed2;
+}
+
 /* _____________________________________________________________________________ */
 /* FOOTER */
 .footer-container {

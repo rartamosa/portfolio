@@ -1,11 +1,7 @@
 import React from "react";
-import { styled } from "@mui/material";
 import uniqid from "uniqid";
 
-import WebIcon from "@mui/icons-material/Web";
-import GitHubIcon from "@mui/icons-material/GitHub";
-
-import { PRIMARY_ACCENT_COLOR } from "./utils/commons";
+import { WebsiteIcon, GitIcon } from "../styled-components/Icons.js";
 
 const SingleMobileProject = ({
   image,
@@ -16,30 +12,30 @@ const SingleMobileProject = ({
   theme,
 }) => {
   return (
-    <div className="singleMobileProject_container">
+    <div className="single-project__container">
       <img src={image} className="singleMobileProject_img" />
       <div
-        className={`singleMobileProject_details ${
-          theme === "light" ? "singleMobileProject_details-light" : ""
+        className={`single-project__details ${
+          theme === "light" ? "single-project__details-light" : ""
         }`}
       >
-        <div className="singleMobileProject_description">
-          <h3 className="singleMobileProject_description-title">{name}</h3>
-          <ul className="singleMobileProject_description-list">
+        <div>
+          <h3 className="single-project__description-title">{name}</h3>
+          <ul className="single-project__description-list">
             {technologies.map((technology) => (
               <li key={uniqid()}>{technology}</li>
             ))}
           </ul>
         </div>
-        <div className="singleMobileProject_icon-container">
-          <div className="singleMobileProject_icon-container_single-icon">
+        <div className="single-project__icon-container">
+          <div className="single-project__icon-container_single-icon">
             <WebsiteIcon />
             <a href={site} target="_blank">
               live site
             </a>
           </div>
-          <hr className="singleMobileProject_icon-container_line" />
-          <div className="singleMobileProject_icon-container_single-icon">
+          <hr className="single-project__icon-container_line" />
+          <div className="single-project__icon-container_single-icon">
             <GitIcon />
             <a href={github} target="_blank">
               github
@@ -52,15 +48,3 @@ const SingleMobileProject = ({
 };
 
 export default SingleMobileProject;
-
-export const WebsiteIcon = styled(WebIcon)(() => ({
-  color: PRIMARY_ACCENT_COLOR,
-  width: "35px",
-  height: "35px",
-}));
-
-export const GitIcon = styled(GitHubIcon)(() => ({
-  color: PRIMARY_ACCENT_COLOR,
-  width: "35px",
-  height: "35px",
-}));

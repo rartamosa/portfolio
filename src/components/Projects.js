@@ -12,6 +12,7 @@ const Projects = ({ theme }) => {
 
   return (
     <>
+      <div className="projects__yellow-cirlce"></div>
       {PWAprojectsList.map((project) => (
         <SingleMobileProject
           key={project._id}
@@ -23,7 +24,18 @@ const Projects = ({ theme }) => {
           theme={theme}
         />
       ))}
-      <SingleProject />
+      <div className="projects__orange-circle"></div>
+      {projectsList.map((project) => (
+        <SingleProject
+          key={project._id}
+          image={project.image}
+          name={project.name}
+          technologies={project.technologies}
+          site={project.site}
+          github={project.github}
+          theme={theme}
+        />
+      ))}
     </>
   );
 };
