@@ -4,11 +4,18 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   font-family: "Red Hat Display", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: clip;
+  padding: 20px;
 }
 
 code {
@@ -58,7 +65,7 @@ code {
 
 /* _____________________________________________________________________________ */
 /* PROJECTS */
-/* .projects__yellow-cirlce {
+.projects__yellow-cirlce {
   background-image: url(../public/assets/yellow-circle.png);
   width: 395px;
   height: 395px;
@@ -76,7 +83,7 @@ code {
   background-size: contain;
   position: absolute;
   left: -46%;
-} */
+}
 
 .singleMobileProject_img {
   height: 368px;
@@ -197,4 +204,10 @@ code {
   position: absolute;
   right: -25px;
   bottom: -50px;
+}
+
+/* _____________________________________________________________________________ */
+/* OVERRIDES */
+.MuiPaper-root {
+  box-shadow: none !important;
 }

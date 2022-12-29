@@ -26,16 +26,20 @@ export default Toggle;
 
 export const ToggleButton = styled(Switch)(() => ({
   height: "35px",
+  "& .MuiSwitch-switchBase.Mui-checked": {
+    transform: "translateX(35px)",
+
+    "& + .MuiSwitch-track": {
+      backgroundColor: "#414361",
+    },
+  },
+
   "& span": {
     padding: "0",
     color: SECONDARY_ACCENT_COLOR,
-    // color: {theme === "dark" ? SECONDARY_ACCENT_COLOR : "#414361"},
   },
-  "& .css-1yjjitx-MuiSwitch-track": {
+  "& .MuiSwitch-track": {
     backgroundColor: PRIMARY_ACCENT_COLOR,
     opacity: "1",
-  },
-  "& .css-1m9pwf3": {
-    backgroundColor: "#414361",
   },
 }));

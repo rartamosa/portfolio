@@ -78,7 +78,9 @@ const Navigation = ({ onThemeToggle, theme }) => {
 
 export default Navigation;
 
-export const MenuButton = styled(MenuIcon)(({ lighttheme }) => ({
+export const MenuButton = styled(MenuIcon, {
+  shouldForwardProp: (prop) => prop !== "lighttheme",
+})(({ lighttheme }) => ({
   width: "24px",
   color: lighttheme ? DARK_BACKGROUND_COLOR : DARK_FONT_COLOR,
   "& .MuiButtonBase-root": {
@@ -87,7 +89,9 @@ export const MenuButton = styled(MenuIcon)(({ lighttheme }) => ({
   },
 }));
 
-export const MenuElement = styled(MenuItem)(({ lighttheme }) => ({
+export const MenuElement = styled(MenuItem, {
+  shouldForwardProp: (prop) => prop !== "lighttheme",
+})(({ lighttheme }) => ({
   color: lighttheme ? DARK_BACKGROUND_COLOR : DARK_FONT_COLOR,
   fontFamily: "Red Hat Display, sans-serif",
   textTransform: "uppercase",
@@ -101,14 +105,17 @@ export const MenuElement = styled(MenuItem)(({ lighttheme }) => ({
   marginBottom: "20px",
 }));
 
-export const MenuMobile = styled(Menu)(({ lighttheme }) => ({
+export const MenuMobile = styled(Menu, {
+  shouldForwardProp: (prop) => prop !== "lighttheme",
+})(({ lighttheme }) => ({
   "& .MuiList-root": {
     backgroundColor: lighttheme ? DARK_FONT_COLOR : DARK_BACKGROUND_COLOR,
     width: "240px",
     padding: "0 21px 7px 0",
     borderBottom: `2px solid ${PRIMARY_ACCENT_COLOR}`,
     borderRight: `2px solid ${PRIMARY_ACCENT_COLOR}`,
-    boxShadow: `3px 1px 0px 1px ${PRIMARY_ACCENT_COLOR}`,
+    // boxShadow: `3px 1px 0px 1px ${PRIMARY_ACCENT_COLOR}`,
+    boxShadow: "none",
     borderRadius: "20px 0px 20px 20px",
   },
   "& .MuiList-root li:last-of-type": {

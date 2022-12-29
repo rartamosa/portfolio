@@ -6,9 +6,9 @@ import SingleMobileProject from "./SingleMobileProject";
 import SingleProject from "./SingleProject";
 
 const Projects = ({ theme }) => {
-  const PWAprojectsList = projects.filter((project) => project.mobile === true);
+  const PWAprojectsList = projects.filter((project) => project.mobile);
 
-  const projectsList = projects.filter((project) => project.mobile === false);
+  const projectsList = projects.filter((project) => !project.mobile);
 
   return (
     <>
