@@ -165,6 +165,58 @@ code {
 }
 
 /* _____________________________________________________________________________ */
+/* CONTACT */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.contact-container__header {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-container__description-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container__description-box-image {
+  width: 205px;
+  box-shadow: 2px 15px 0px #fe4e15;
+  border-radius: 50%;
+  margin-bottom: 46px;
+  align-self: center;
+}
+
+.contact-container__description-box-bio {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  margin-bottom: 23px;
+  order: 2;
+}
+
+.contact-container__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+contact-container__icons_single-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* _____________________________________________________________________________ */
 /* FOOTER */
 .footer-container {
   display: flex;

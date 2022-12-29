@@ -5,9 +5,10 @@ import { darkTheme, lightTheme } from "./theme";
 import GlobalStyles from "./global";
 
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -27,6 +28,7 @@ const App = () => {
         <Navigation onThemeToggle={handleThemeToggle} theme={theme} />
         <Header />
         <Projects theme={theme} />
+        <Contact />
         <Footer />
       </ThemeProvider>
     </>
