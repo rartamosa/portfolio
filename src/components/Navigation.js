@@ -79,6 +79,11 @@ const Navigation = ({ onThemeToggle, theme }) => {
             contact
           </MenuElement>
         </MenuMobile>
+        <div className="layout-container__desktop-menu">
+          <p onClick={() => handleNavigationClick("home")}>home</p>
+          <p onClick={() => handleNavigationClick("projects")}>projects</p>
+          <p onClick={() => handleNavigationClick("contact")}>contact</p>
+        </div>
       </div>
     </>
   );

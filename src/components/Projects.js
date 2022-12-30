@@ -36,6 +36,7 @@ const Projects = ({ theme }) => {
           theme={theme}
         />
       ))}
+      <div className="projects__yellow-cirlce2"></div>
     </div>
   );
 };

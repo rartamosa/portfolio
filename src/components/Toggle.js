@@ -5,7 +5,7 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Switch from "@mui/material/Switch";
 
-import { SECONDARY_ACCENT_COLOR, PRIMARY_ACCENT_COLOR } from "./utils/commons";
+import { SECONDARY_ACCENT_COLOR } from "./utils/commons";
 
 const Toggle = ({ onThemeToggle, theme }) => {
   return (
@@ -39,7 +39,6 @@ export const ToggleButton = styled(Switch)(() => ({
     color: SECONDARY_ACCENT_COLOR,
   },
   "& .MuiSwitch-track": {
-    backgroundColor: PRIMARY_ACCENT_COLOR,
-    opacity: "1",
+    backgroundColor: "#ffed00",
   },
 }));
