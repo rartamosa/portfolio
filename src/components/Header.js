@@ -9,7 +9,7 @@ const Header = () => {
           junior front-end developer
         </p>
         <p className="header-container__box-paragraph">
-          international projct manager
+          international project manager
         </p>
       </div>
     </div>
