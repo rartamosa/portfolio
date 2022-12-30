@@ -352,5 +352,20 @@ contact-container__icons_single-icon-container {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+  }
+  /* HEADER */
+  .header-container {
+    margin: 269px 0 271px 0;
+  }
+  .header-container__title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 88px;
+    margin-bottom: 31px;
+  }
+  .header-container__box-paragraph {
+    font-size: 55px;
+    line-height: 69px;
   }
 }
