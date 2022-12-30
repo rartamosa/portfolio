@@ -24,6 +24,12 @@ const Navigation = ({ onThemeToggle, theme }) => {
     setAnchorEl(null);
   };
 
+  const handleNavigationClick = (id) => {
+    document.getElementById(id).scrollIntoView();
+    handleClose();
+    console.log(document.getElementById(id));
+  };
+
   return (
     <>
       <div className="layout-container__blue-circle"></div>
@@ -52,21 +58,21 @@ const Navigation = ({ onThemeToggle, theme }) => {
         >
           <MenuElement
             lighttheme={Boolean(theme === "light")}
-            onClick={handleClose}
+            onClick={() => handleNavigationClick("home")}
           >
             home
           </MenuElement>
 
           <MenuElement
             lighttheme={Boolean(theme === "light")}
-            onClick={handleClose}
+            onClick={() => handleNavigationClick("projects")}
           >
             projects
           </MenuElement>
 
           <MenuElement
             lighttheme={Boolean(theme === "light")}
-            onClick={handleClose}
+            onClick={() => handleNavigationClick("contact")}
           >
             contact
           </MenuElement>

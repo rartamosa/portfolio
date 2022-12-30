@@ -11,7 +11,7 @@ const Projects = ({ theme }) => {
   const projectsList = projects.filter((project) => !project.mobile);
 
   return (
-    <>
+    <div id="projects">
       <div className="projects__yellow-cirlce"></div>
       {PWAprojectsList.map((project) => (
         <SingleMobileProject
@@ -36,7 +36,7 @@ const Projects = ({ theme }) => {
           theme={theme}
         />
       ))}
-    </>
+    </div>
   );
 };
 

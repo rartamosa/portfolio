@@ -13,6 +13,7 @@ export const WebsiteIcon = styled(WebIcon)(() => ({
   color: PRIMARY_ACCENT_COLOR,
   width: "35px",
   height: "35px",
+  cursor: "pointer",
   "& :hover": {
     color: DARK_FONT_COLOR,
   },
@@ -22,6 +23,7 @@ export const GitIcon = styled(GitHubIcon)(() => ({
   color: PRIMARY_ACCENT_COLOR,
   width: "35px",
   height: "35px",
+  cursor: "pointer",
   "& :hover": {
     color: DARK_FONT_COLOR,
   },
@@ -31,6 +33,7 @@ export const LinkedinIcon = styled(LinkedInIcon)(() => ({
   color: PRIMARY_ACCENT_COLOR,
   width: "30px",
   height: "30px",
+  cursor: "pointer",
   "& :hover": {
     color: DARK_FONT_COLOR,
   },
@@ -40,6 +43,7 @@ export const EmailIcon = styled(AlternateEmailIcon)(() => ({
   color: PRIMARY_ACCENT_COLOR,
   width: "30px",
   height: "30px",
+  cursor: "pointer",
   "& :hover": {
     color: DARK_FONT_COLOR,
   },
