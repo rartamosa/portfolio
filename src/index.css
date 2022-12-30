@@ -168,9 +168,6 @@ code {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-}
-
-.single-project__icon-container_single-icon a {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
@@ -179,6 +176,16 @@ code {
   color: inherit;
   width: max-content;
 }
+
+/* .single-project__icon-container_single-icon a {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+  width: max-content;
+} */
 
 .single-project__icon-container_line {
   border: 1px solid #fdeed2;
@@ -473,9 +480,6 @@ contact-container__icons_single-icon-container {
     width: 54px;
     height: 54px;
   }
-  /* .single-project__details {
-    height: 420px;
-  } */
   .single-project__description {
     display: flex;
     flex-direction: column;

@@ -34,23 +34,29 @@ const SingleMobileProject = ({
         </div>
       </div>
       <div className="single-mobile-project__icon-container">
-        <div className="single-project__icon-container_single-icon">
+        <a
+          href={site}
+          target="_blank"
+          rel="noreferrer"
+          className="single-project__icon-container_single-icon"
+        >
           <WebsiteIcon darktheme={Boolean(theme === "dark")} />
-          <a href={site} target="_blank" rel="noreferrer">
-            live site
-          </a>
-        </div>
+          <span>live site</span>
+        </a>
         <hr
           className={`single-project__icon-container_line ${
             theme === "light" ? "single-project__icon-container_line-dark" : ""
           }`}
         />
-        <div className="single-project__icon-container_single-icon">
+        <a
+          href={github}
+          target="_blank"
+          rel="noreferrer"
+          className="single-project__icon-container_single-icon"
+        >
           <GitIcon darktheme={Boolean(theme === "dark")} />
-          <a href={github} target="_blank" rel="noreferrer">
-            github
-          </a>
-        </div>
+          <span>github</span>
+        </a>
       </div>
     </div>
   );
