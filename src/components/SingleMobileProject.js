@@ -29,14 +29,14 @@ const SingleMobileProject = ({
         </div>
         <div className="single-project__icon-container">
           <div className="single-project__icon-container_single-icon">
-            <WebsiteIcon />
+            <WebsiteIcon darktheme={Boolean(theme === "dark")} />
             <a href={site} target="_blank">
               live site
             </a>
           </div>
           <hr className="single-project__icon-container_line" />
           <div className="single-project__icon-container_single-icon">
-            <GitIcon />
+            <GitIcon darktheme={Boolean(theme === "dark")} />
             <a href={github} target="_blank">
               github
             </a>

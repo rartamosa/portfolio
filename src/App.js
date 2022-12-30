@@ -28,7 +28,7 @@ const App = () => {
         <Navigation onThemeToggle={handleThemeToggle} theme={theme} />
         <Header />
         <Projects theme={theme} />
-        <Contact />
+        <Contact theme={theme} />
         <Footer />
       </ThemeProvider>
     </>

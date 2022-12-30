@@ -7,7 +7,11 @@ const Footer = () => {
     <div className="footer-container">
       <div
         className="footer-container__top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() =>
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }, 0)
+        }
       >
         <p className="footer-container__top-text">back to top</p>
         <KeyboardDoubleArrowUpIcon sx={{ width: "10px" }} />

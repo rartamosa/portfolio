@@ -25,9 +25,11 @@ const Navigation = ({ onThemeToggle, theme }) => {
   };
 
   const handleNavigationClick = (id) => {
-    document.getElementById(id).scrollIntoView();
+    setTimeout(() => {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }, 0);
+    // document.getElementById(id).scrollIntoView();
     handleClose();
-    console.log(document.getElementById(id));
   };
 
   return (
@@ -120,7 +122,6 @@ export const MenuMobile = styled(Menu, {
     padding: "0 21px 7px 0",
     borderBottom: `2px solid ${PRIMARY_ACCENT_COLOR}`,
     borderRight: `2px solid ${PRIMARY_ACCENT_COLOR}`,
-    // boxShadow: `3px 1px 0px 1px ${PRIMARY_ACCENT_COLOR}`,
     boxShadow: "none",
     borderRadius: "20px 0px 20px 20px",
   },

@@ -1,22 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { BIO_DESCRIPTION } from "./utils/commons";
 import { GitIcon, LinkedinIcon, EmailIcon } from "../styled-components/Icons";
 import Skills from "./Skills";
 
-const Contact = () => {
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    // e.preventDefault();
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    // e.stopPropagation();
-    setIsHovering(false);
-  };
-
+const Contact = ({ theme }) => {
   return (
     <>
       <div className="contact-container" id="contact">
@@ -39,12 +27,13 @@ const Contact = () => {
               a
               target="_blank"
               rel="noreferrer"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
             >
-              <GitIcon sx={{ height: "30px", width: "30px" }} />
+              <GitIcon
+                darktheme={Boolean(theme === "dark")}
+                sx={{ height: "30px", width: "30px" }}
+              />
             </a>
-            <span className={isHovering ? "visible" : ""}>rartamosa</span>
+            <span>rartamosa</span>
           </div>
 
           <div className="contact-container__icons_single-icon-container">
@@ -53,31 +42,21 @@ const Contact = () => {
               a
               target="_blank"
               rel="noreferrer"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
             >
-              <LinkedinIcon />
+              <LinkedinIcon darktheme={Boolean(theme === "dark")} />
             </a>
-            {/* {isHovering && <span>marta-rosa</span>} */}
-            <span className={isHovering ? "visible" : ""}>marta-rosa</span>
+            <span>marta-rosa</span>
           </div>
 
           <div className="contact-container__icons_single-icon-container">
-            <a
-              href="mailto: rartamosa@gmail.com"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-            >
-              <EmailIcon />
+            <a href="mailto: rartamosa@gmail.com">
+              <EmailIcon darktheme={Boolean(theme === "dark")} />
             </a>
-            {/* {isHovering && <span>rartamosa@gmail.com</span>} */}
-            <span className={isHovering ? "visible" : ""}>
-              rartamosa@gmail.com
-            </span>
+            <span>rartamosa@gmail.com</span>
           </div>
         </div>
       </div>
-      <Skills />
+      <Skills theme={theme} />
     </>
   );
 };
