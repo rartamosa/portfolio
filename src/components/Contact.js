@@ -10,12 +10,15 @@ const Contact = ({ theme }) => {
         <h2 className="contact-container__header">contact</h2>
         <div className="contact-container__description-box">
           <div className="contact-container__description-box-bio">
-            Motivated junior front-end developer with a strong background in
-            project management which translates into well-developed soft skills,
-            cross teams management, and an advanced business perspective.
+            As a project manager, I have honed my skills in project planning,
+            cross-functional team management, and communication. Looking to
+            pivot my career into front-end development, I am excited to bring my
+            strong attention to detail and ability to deliver projects on time
+            to a new role. I am currently completing a front-end bootcamp and am
+            eager to apply my skills in a junior developer position.
             <br /> <br />
-            Exceptionally organized and focused with no fear of asking questions
-            which makes me an eager and fast learner.
+            After a time of managing projects, I’m ready to start creating them
+            - one line of code at a time.
           </div>
           <img
             src="./assets/bio_image.jpg"
